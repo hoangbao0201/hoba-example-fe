@@ -13,6 +13,7 @@ import {
 } from "../../public/icons";
 import { ConvertNumber } from "../../utils/ConvertNumber";
 import { useState } from "react";
+import Link from "next/link";
 
 export interface BooksRaitingProps {}
 
@@ -348,14 +349,14 @@ const BoxContainerRaiting = ({ indexTabItem } : any) => {
                                                 )}
                                             >
                                                 <h3 className={cx("name-book")}>
-                                                    <a
+                                                    <Link
                                                         className={cx(
                                                             "name-book-link"
                                                         )}
                                                         href="/"
                                                     >
                                                         {item.name}
-                                                    </a>
+                                                    </Link>
                                                 </h3>
                                                 <div
                                                     className={cx("view-book")}
@@ -389,7 +390,7 @@ const BoxContainerRaiting = ({ indexTabItem } : any) => {
                                                     className={cx("grid-book")}
                                                 >
                                                     <div className={cx("book")}>
-                                                        <a
+                                                        <Link
                                                             className={cx(
                                                                 "book-link"
                                                             )}
@@ -406,7 +407,7 @@ const BoxContainerRaiting = ({ indexTabItem } : any) => {
                                                                         .url
                                                                 }
                                                             />
-                                                        </a>
+                                                        </Link>
                                                         <div
                                                             className={cx(
                                                                 "book-cover-shadow"
