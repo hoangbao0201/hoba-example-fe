@@ -12,6 +12,7 @@
 .list-box {
     display: flex;
     flex-wrap: nowrap;
+    transition: all 0.2 ease-in-out;
 }
 
 .grid-box {
@@ -28,6 +29,7 @@
     .box-row {
         display: flex;
         align-items: center;
+        justify-content: space-between;
         flex-wrap: nowrap;
         position: relative;
 
@@ -217,21 +219,23 @@
     width: 100%;
     position: relative;
     border-top: 1px solid #eeee;
+    background-color: #eeee;
 
     display: none;
     align-items: center;
     
     .devider {
-        width: calc(100%/3);
-        height: 3px;
-        bottom: 0px;
-        position: absolute;
-        background-color: red;
-        transition: all 0.2s ease;
+        // width: calc(100%/3);
+        // height: 1px;
+        // bottom: 0px;
+        // padding: 0px 5px;
+        // position: absolute;
+        // background-color: red;
+        // transition: all 0.2s ease;
     }
     &.tab1 {
         .item:nth-child(1) {
-            background-color: #eeee;
+            background-color: #ffff;
         }
         .devider {
             transform: translateX(calc(100%*0));
@@ -239,7 +243,7 @@
     }
     &.tab2 {
         .item:nth-child(2) {
-            background-color: #eeee;
+            background-color: #ffff;
         }
         .devider {
             transform: translateX(calc(100%*1));
@@ -247,7 +251,7 @@
     }
     &.tab3 {
         .item:nth-child(3) {
-            background-color: #eeee;
+            background-color: #ffff;
         }
         .devider {
             transform: translateX(calc(100%*2));
@@ -258,12 +262,13 @@
 .tablist {
 
     .item {
+        font-weight: 600;
         padding: 14px 0px;
         text-align: center;
         width: calc(100%/3);
         -webkit-user-select: none;
         cursor: pointer;
-        transition: all 0.2s ease;
+        // transition: all 0.2s ease;
 
         &:hover {
             background-color: rgb(246, 246, 246);
@@ -284,7 +289,7 @@
 
 // Response
 
-@media (max-width: 576px) {
+@media (max-width: 1200px) {
     .container {
         background-color: #ffff;
     }
@@ -320,6 +325,14 @@
         
         .box {
             box-shadow: none !important;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .tablist {
+        .item {
+            font-size: 15px;
         }
     }
 }

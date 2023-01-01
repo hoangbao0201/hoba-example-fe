@@ -19,7 +19,7 @@ export interface BooksRaitingProps {}
 
 const DataListBooksRaiting = [
     {
-        title: "Đọc nhiều trong tuần",
+        title: "Đọc nhiều",
         content: [
             {
                 name: "Linh Khí Khôi Phục, Trọng Sinh Cháu Gái Hướng Ta Ngả Bài",
@@ -114,7 +114,7 @@ const DataListBooksRaiting = [
         ],
     },
     {
-        title: "Đọc nhiều trong tuần",
+        title: "Thịnh hành",
         content: [
             {
                 name: "Vừa Thành Tiên Thần, Con Cháu Cầu Ta Xuất Sơn",
@@ -209,7 +209,7 @@ const DataListBooksRaiting = [
         ],
     },
     {
-        title: "Đọc nhiều trong ngày",
+        title: "Đề cử",
         content: [
             {
                 name: "Người Tại Tu Tiên Thế Giới, Cùng Ai Đều Có Thể Chia Năm Năm",
